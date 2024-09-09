@@ -49,7 +49,7 @@ const Index = (props) => {
         {selected == 4 && (
           <div className="app_body">
             <SidebarGame />
-            <FeedGame />
+            <FeedMarketplace />
           </div>
         )}
       </div>
