@@ -1,0 +1,46 @@
+.story{
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 120px;
+    height: 200px;
+    
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: transform 100ms ease-in;
+    cursor: pointer;
+}
+    
+.story::after {
+    content:'\A';
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0, 0, 0, 0.352);
+    opacity:0;
+    transition: all 0.2s;
+    border-radius: 10px;
+    -webkit-transition: all 0.2s;
+}
+
+
+
+
+.story:hover:after {
+    opacity:1;
+}
+
+.story_avatar{
+    margin: 10px;
+    border: 5px solid #2e81f4;
+}
+
+.story > h4{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 12px;
+}

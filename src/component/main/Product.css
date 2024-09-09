@@ -1,0 +1,19 @@
+
+
+.product{
+
+    cursor: pointer;;
+    height: 300px;
+    width: 218px;
+    
+    
+    
+    }
+    
+    .product img{
+    
+        height: 220px;
+        width: 213px;
+        border-radius: 8px;
+        object-fit: cover;
+    }

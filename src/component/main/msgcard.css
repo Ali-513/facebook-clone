@@ -1,0 +1,103 @@
+.msgcardcontainer{
+
+    position: fixed;
+    width: 350px;
+    height: 480px;
+   
+    background-color: #fff;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: rgb(0 0 0 / 15%) 0px 10px 20px;
+    bottom: 0px;
+    right: 90px;
+   
+}
+
+.msgheadercontainer{
+    padding:10px 15px;
+
+}
+.msgcardheader{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.msgcardheader h3{
+margin:0;
+font-size:17px ;
+    }
+
+    .msgcardheader button{
+
+    border:none;
+    background-color: transparent;
+    color:rgba(0, 0, 255, 0.651);
+    font-size: 25px;
+    padding:0;
+        
+        }
+
+.msgcardrecipent{
+
+font-size: 1rem;
+margin-top:20px;
+margin-bottom: 15px;
+}
+
+.msgcardrecipent label{
+
+    font-size: 1.2rem;
+    font-weight: 400;
+margin-right: 10px;
+}
+
+.msgcardrecipent input{
+
+    border:none;
+    font-size: 1.2rem;
+}
+
+.msgcardrecipent input:focus{
+
+    outline: none;
+
+}
+
+.msgcardmain{
+
+    border-top: 1px solid lightgray;
+    height: 100%;
+}
+
+.suggested{
+    
+    box-shadow: rgb(0 0 0 / 15%) 0px 3px 3px;
+    
+}
+
+.suggested::after{
+
+    content: '';
+    display: block;
+    
+    top: 0;
+    width: 50%;
+    left: 25%;
+    border-top: 3px solid rgba(0, 42, 255, 0.66);
+}
+
+
+
+.suggested h2{
+    font-size: 18px;
+    color:rgba(0, 0, 255, 0.618);
+    padding:20px 40px;
+}
+
+.friends{
+    overflow-y: scroll;
+    margin:15px 10px;
+    height: 300px
+
+}

@@ -1,0 +1,129 @@
+.app{
+    background-color: #f1f2f5;
+    width: fit-content;
+    min-width: 100vw;
+}
+
+.app_body{
+    display: flex;
+    scrollbar-color: rgba(211, 211, 211, 0.444) rgba(211, 211, 211, 0.444) ;
+}
+
+.header_center2{
+
+    display:none;
+}
+
+    
+.linearprogress{
+
+    position:sticky !important;
+    width: 100%;
+    z-index:101 !important;
+    top:0;
+    background-color: #fff;
+}
+
+
+@media only screen and (max-width: 1100px) {
+
+.sidebar,.sidebarvideo{
+
+    display:none;
+   
+}
+.feed,.feedMarketplace,.feedvideo,.feedgame{
+    flex:3 ;
+    padding:30px 30px;
+}
+.side{
+
+
+    right:unset;
+}
+
+}
+
+
+
+@media only screen and (max-width: 900px){
+
+.widgets{
+
+    display:none;
+}
+
+.header_input input{
+
+    display: none;
+
+}
+
+.storyReel,.messageSender,.post{
+
+    width: 100vw;
+}
+
+.feed{
+    flex-shrink: 5;
+}
+
+
+}
+
+@media only screen and (max-width: 480px){
+    .dVuaIi {
+width: 80vw !important;
+    }
+    .header_center2{
+
+        display:flex;
+    }
+    
+.notification{
+
+    width: 90vw!important;
+}
+.postwidth > .post {
+    width: 92vw !important;
+}
+
+.feed,.feedMarketplace,.feedvideo,.feedgame{
+    padding:20px 0px 0px 0px;
+    width: 100vw;
+}
+
+iframe{
+
+    width: 92vw;
+    height: 250px;
+
+}
+.header_center{
+
+    display: none;
+}
+
+.header_info{
+
+    display: none;
+}
+
+.header{
+
+    width: 100vw;
+}
+
+.messageSender_option:last-child{
+
+
+    display: none;
+}
+
+video{
+
+    width: 100%;
+
+}
+
+}

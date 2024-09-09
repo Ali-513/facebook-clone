@@ -1,0 +1,22 @@
+
+
+.bg-gray{
+
+
+}
+
+.firstrow{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+width:90%;
+margin:10px 0px 10px 10px
+
+
+}
+
+.blocking{
+    width: 365px;
+}
+

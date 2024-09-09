@@ -1,0 +1,201 @@
+.header{
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: white;
+    width: auto;
+    height: 55px;
+    box-shadow: 0px 5px 8px -9px rgba(0,0,0,0.75);
+
+}
+
+.header_left{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.header_input{
+    display: flex;
+    align-items: center;
+    background-color:#eff2f5;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 999px;
+}
+ img{
+    height: 40px;
+}
+
+input{
+    border: none;
+    background-color: transparent;
+    outline-width: 0;
+}
+
+.header_center{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+
+.header_center2{
+
+    position: fixed;
+display: flex;
+justify-content: center;
+background-color: #fff;
+top:60px;
+left:50%;
+transform:translateX(-50%);
+width: 100vw;
+box-shadow: 0px 5px 8px -9px rgba(0,0,0,0.75);
+border-radius: 20%;
+}
+
+.header_center2 .header_option{
+
+padding:0 20px;
+
+}
+
+.header_option > .MuiSvgIcon-root{
+    color:gray;
+}
+
+.header_option:hover > .MuiSvgIcon-root{
+    color:#2e81f4;
+}
+
+
+.header_option--active > .MuiSvgIcon-root{
+    color: #2e81f4;
+}
+
+
+.header_option--active{
+    border-bottom: 4px solid #2e81f4;
+}
+
+.header_option{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    cursor: pointer;
+}
+
+.header_option:hover{
+    background-color: #eff2f5;
+    border-radius: 10px;
+    align-items: center;
+    padding: 0 50px;
+    border-bottom: 0;
+}
+
+.header_info{
+    display: flex;
+    align-items: center;
+}
+
+.header_info > h4{
+    margin-left: 10px;
+
+}
+
+.header_right{
+    display: flex;
+    align-items: center;
+}
+
+
+.dropdown{
+
+position:fixed;
+top:60px;
+}
+
+.sidebarRow.hover {
+   background-color: transparent !important;
+}
+.dropdown hr{
+
+    margin:10px 15px;
+}
+
+.menu-button{
+
+    border-radius: 100%;
+    border:none;
+    font-size: 18px;
+width: 40px;
+height: 40px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-left:5px;
+    
+}
+
+.btndiv{
+
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+    margin-right:10px;
+}
+
+.menu-button i{
+
+    margin:0;
+
+}
+
+
+
+
+.spec{
+
+    padding-left:4px !important;
+}
+
+
+.dropdowmitems{
+
+display: flex !important;
+justify-content: center !important;
+align-items: center !important;
+
+
+}
+
+.dropdowmitems i{
+
+
+    background-color: rgba(220, 220, 220, 0.519);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    padding: 20px;
+
+
+}
+
+
+.dropdowmitems .heading{
+
+
+    margin-left: 15px;
+}
+
+.chevron.right.icon{
+
+background-color: transparent;
+box-shadow: none;
+color:gray;
+
+}

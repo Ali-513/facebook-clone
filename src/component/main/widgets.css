@@ -1,0 +1,50 @@
+.widgets{
+   
+    flex: 1;
+   
+   
+  
+}
+
+.side{
+    position: fixed;
+    right:0;
+    height: 90vh;
+    overflow:hidden;
+    width: 22vw;
+    
+}
+
+
+.side:hover{
+
+    overflow-y: scroll;
+   
+ }
+
+ .adsrow{
+
+    border-bottom: 1px solid lightgray;
+    padding-bottom:15px;
+    margin-top:25px;
+ }
+
+
+
+ .btn-back{
+    position:fixed;
+    bottom:15px;
+    right:15px;
+    background-color: #fff;
+    border:5px solid #fff;
+    width: 50px;
+    height: 50px; 
+    border-radius: 100%;
+    box-shadow: rgb(0 0 0 / 20%) 0px 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    
+
+}
+    

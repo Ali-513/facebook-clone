@@ -1,0 +1,29 @@
+
+
+.adsRow{
+    display: flex;
+    align-items: center;
+    margin-top:10px;
+    }
+    
+    .adsstyle{
+    
+        border-radius: 12px;
+    
+    }
+    
+    .addinfo{
+    
+    margin:0px 10px;
+    }
+    
+    .addinfo h4{
+        margin:0;
+        font-size: 15px;
+    }
+    
+    .addinfo h5{
+        margin:5px 0px;
+        color:#1c1e21;
+        font-weight: 100;
+    }
