@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './login.css';
 import img from "../../images/logo.svg";
-import { Link }from"react-router-dom";
+import { Link, useNavigate }from"react-router-dom";
 export default function Login() {
 
   const[ userinfo, setuserinfo ]= useState({
@@ -16,17 +16,27 @@ export default function Login() {
   };
   const checker=()=>{
     if(userinfo.email.includes('@')&&(userinfo.password==="123")){
-      alert("Successfully Login")
+      localStorage.setItem("token","abcd")
+      navigate('/main');
     }
     else{
       alert("Incorrect Email or Password")
     }
   }
 
-  
+  const navigate =useNavigate();
+
+  useEffect(()=>{
+    if(localStorage.getItem("token"))
+      {
+        navigate('/main')
+      }
+  },[])
+ 
+
   return (
     <div>
-      <div className="container">
+      <div className="container2">
         <div className="leftcontainer">
           <div className="left">
             <img src={img} alt="" />

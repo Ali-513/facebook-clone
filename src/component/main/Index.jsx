@@ -11,10 +11,18 @@ import SidebarMarketplace from "./SidebarMarketplace";
 import FeedMarketplace from "./FeedMarketplace";
 import SidebarGame from "./SidebarGame";
 import FeedGame from "./FeedGame";
+import { useNavigate } from "react-router-dom";
 
 const Index = (props) => {
   const [selected, setSelected] = useState(0);
-
+  const navigate = useNavigate();
+  useEffect(()=>{
+    if(!localStorage.getItem("token"))
+      {
+        navigate('/')
+      }
+  },[])
+  
   return (
     <>
       <div className="app">

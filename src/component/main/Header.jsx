@@ -16,6 +16,7 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import Typography from '@mui/material/Typography';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 const Header = ({setSelected,selected}) => {
   const [dropdown,setdropdown] =useState(0);
   const style={
@@ -31,7 +32,11 @@ const handle=()=>{
        setdropdown(1);
     }
 }
-
+const navigator=()=>{
+  navigate("/")
+  localStorage.removeItem("token")
+}
+const navigate = useNavigate();
   return (
     <div className='header'>
       <div className="header_left">
@@ -121,7 +126,7 @@ const handle=()=>{
               <ListItemIcon>
                 <i className="sign-out icon"></i>
               </ListItemIcon>
-              <ListItemText className='heading' >Log out</ListItemText>
+              <ListItemText className='heading' onClick={()=>navigator()}>Log out</ListItemText>
             </MenuItem>
           </MenuList>
         </Paper>
